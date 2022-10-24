@@ -7,7 +7,7 @@ end
 isPremium = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptrai/main/mods/mod.lua"))()
 
 if not isPremium[game.Players.LocalPlayer.UserId] then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptrai/main/Key3.lua'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptrai/main/Key.lua'))()
 end
 
 -- // Services
