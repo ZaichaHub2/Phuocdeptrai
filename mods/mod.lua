@@ -4,7 +4,7 @@
 --// dab
 
 MODS = {
-    [475876108] = true; -- owner 
+    [648292981] = true; -- owner 
     [3053719053] = true; -- owner
     [1621327827] = true; -- 604267013048893441
     [198869150] = true; -- gave nitro
@@ -192,7 +192,7 @@ MODS = {
 }
 
 ADMINS = {
-    [475876108] = true;
+    [648292981] = true;
     [3053719053] = true;
     [2761786526] = true; -- somil
 }
@@ -203,7 +203,7 @@ function initiateNames()
 	for _,v in pairs(game:GetService('Players'):GetPlayers()) do
 		if v.Character then
             if ADMINS[v.UserId] then
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] ' .. v.DisplayName)
+				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑⭐] ' .. v.DisplayName)
 			elseif MODS[v.UserId] then
                 v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐] ' .. v.DisplayName)
             end
