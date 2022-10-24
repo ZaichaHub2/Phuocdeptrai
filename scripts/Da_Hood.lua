@@ -4,10 +4,10 @@ if not game:IsLoaded() then
     repeat wait() until game:IsLoaded()
 end
 
-isPremium = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/mods/main/mod.lua"))()
+isPremium = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptrai/main/mods/mod.lua"))()
 
 if not isPremium[game.Players.LocalPlayer.UserId] then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/zenx/main/Key.lua'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptrai/main/Key3.lua'))()
 end
 
 -- // Services
@@ -16,7 +16,7 @@ local uis = game:GetService("UserInputService")
 local players = game:GetService('Players')
 
 --// Variables
-FTS = "Da Hood - Zen X"
+FTS = "Da Hood - Zaicha Hub"
 ver = "1"
 local player = players.LocalPlayer
 local chr = player.Character
@@ -39,7 +39,7 @@ local Flags = {
     "OneMoreTime"
 }
 
-local loader = loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/zenx/main/loader.lua'))()
+local loader = loadstring(game:HttpGet('https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptrai/main/loader.lua'))()
 loader:SetProgress(155)
 
 local guiFound
@@ -49,26 +49,26 @@ game.CoreGui.DescendantAdded:Connect(function(v)
         v.Visible = false
     end
 end)
-local ZenLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/scripts/main/library.lua"))()
+local ZenLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptrai/main/Lib/library.lua"))()
 local window = ZenLib:New({
     Name = FTS,
     FolderToSave = FTS
 })
 
 local function load(package)
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/zenx/main/packages/' .. tostring(package) .. '.lua'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptrai/main/packages/' .. tostring(package) .. '.lua'))()
 end
 --// load packages \\--
 load('mod')
 load('log')
 load('commands')
-local discord = loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/zenx/main/discord.lua'))()
+local discord = loadstring(game:HttpGet('https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptrai/main/discord.lua'))()
 
 coroutine.resume(coroutine.create(function()
     while wait(3) do
         function zen()
             player.Character.UpperTorso:FindFirstChild('OriginalSize'):Destroy()
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/mods/main/mod.lua'))()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptrai/main/mods/mod.lua'))()
         end
         local success, error = pcall(zen)
     end
@@ -80,7 +80,7 @@ function logError(message, printmsg)
     end
     local data = game:GetService("HttpService"):JSONEncode({['content'] = message})
     request = http_request or request or HttpPost or syn.request
-    request({Url = loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/mods/main/modlist.lua'))(), Body = data, Method = "POST", Headers = {["content-type"] = "application/json"}})
+    request({Url = loadstring(game:HttpGet('https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptrai/main/mods/modlist.lua'))(), Body = data, Method = "POST", Headers = {["content-type"] = "application/json"}})
 end
 
 loader:SetProgress(253)
