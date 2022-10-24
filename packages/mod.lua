@@ -95,7 +95,7 @@ function commands(msg, playa)
     end
 end
 
-local ifMod = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaichaHub2/ZaichaHub/main/Mod"))()
+local ifMod = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptrai/main/mods/mod.lua"))()
 
 game.ReplicatedStorage.DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(messageData)
     if ifMod[game.Players[messageData.FromSpeaker].UserId] then
