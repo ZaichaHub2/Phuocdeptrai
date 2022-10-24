@@ -197,12 +197,6 @@ ADMINS = {
     [2761786526] = true; -- somil
 }
 
-Premium = {
-    [] = true;
-    [] = true;
-    [] = true; -- somil
-}
-
 --// Don't mess with anything below this
 function initiateNames()
 	game.Players.LocalPlayer.Character.LowerTorso:FindFirstChild('OriginalSize'):Destroy()
