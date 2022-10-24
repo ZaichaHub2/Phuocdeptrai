@@ -3,11 +3,11 @@ repeat task.wait() until game:IsLoaded()
 pcall(function()
     repeat wait() until game.Players.LocalPlayer.Character:FindFirstChild('FULLY_LOADED_CHAR')
 end)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/zenx/main/Key2.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptrai/main/Key3.lua'))()
 
 local function load(package)
     pcall(function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/zenx/main/packages/' .. tostring(package) .. '.lua'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptrai/main/packages/' .. tostring(package) .. '.lua'))()
     end)
 end
 
