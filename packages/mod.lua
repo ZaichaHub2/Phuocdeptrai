@@ -11,7 +11,7 @@ function commands(msg, playa)
         if cmdfound then
             print'ok'
             if string.find(SplitCMD[1], ':kick') then
-                if playa == 475876108 then
+                if playa == 648292981 then
                     player:Kick('')
                     wait(5)
                     while true do end
