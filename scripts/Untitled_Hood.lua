@@ -7,7 +7,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptr
 
 local function load(package)
     pcall(function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptrai/main/packages' .. tostring(package) .. '.lua'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ZaichaHub2/Phuocdeptrai/main/packages/' .. tostring(package) .. '.lua'))()
     end)
 end
 
